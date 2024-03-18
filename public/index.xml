@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nipanko</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on nipanko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© nipanko</copyright>
+    <lastBuildDate>Sat, 09 Mar 2024 14:43:06 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/projects/bash/</link>
+      <pubDate>Sat, 09 Mar 2024 14:43:06 +0530</pubDate>
+      <guid>http://localhost:1313/projects/bash/</guid>
+      <description>pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal.</description>
+    </item>
+    <item>
+      <title>Lexical</title>
+      <link>http://localhost:1313/blogs/lexical/</link>
+      <pubDate>Sat, 09 Mar 2024 14:42:47 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/lexical/</guid>
+      <description>Rough Idea&#xA;HLL -&amp;gt; Lexical Analysis (stream of tokens) -&amp;gt; Syntax Analysis (parse tree) -&amp;gt; Semantic analysis (Parse tree (semantically verified))-&amp;gt; Intermidiate code generation (Three address code) -&amp;gt; Code optimization -&amp;gt; Target code generation -&amp;gt; Assembler During all this process all the modules will take support form {[SYMBOL TABLE MANAGER]} and talk with the {[ERROR HANDLER]} A lexical(relating to word) analyzer is ==a part of a compiler that breaks input into meaningful units==.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/blogs/c&#43;&#43;/</link>
+      <pubDate>Sat, 09 Mar 2024 14:41:59 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/c&#43;&#43;/</guid>
+      <description>Linux distribution mainly consists of the following components&#xA;Boot Loader Init System Display Renderer Display Manager Display Environments Package Managers All Linux Distros differ based on these 3 components</description>
+    </item>
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/creative/hello/</link>
+      <pubDate>Sat, 09 Mar 2024 14:41:35 +0530</pubDate>
+      <guid>http://localhost:1313/creative/hello/</guid>
+      <description>Rules of Rounding off If the digit to be dropped is smaller than 5, then the preceding digit is left unchanged.</description>
+    </item>
+    <item>
+      <title>Symbol Tables</title>
+      <link>http://localhost:1313/blogs/symbol-tables/</link>
+      <pubDate>Sat, 09 Mar 2024 13:55:43 +0530</pubDate>
+      <guid>http://localhost:1313/blogs/symbol-tables/</guid>
+      <description>123456789 from manimlib import *class SquareToCircle(Scene): def construct(self): circle = Circle() circle.set_fill(BLUE, opacity=0.5) circle.set_stroke(BLUE_E, width=4) self.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 19 Apr 2019 21:37:58 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>This is some static page where you can write about yourself.dfdfffffffffffffffffffffffff</description>
+    </item>
+  </channel>
+</rss>
