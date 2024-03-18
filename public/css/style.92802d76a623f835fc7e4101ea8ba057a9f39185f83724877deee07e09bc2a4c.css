@@ -1,0 +1,38 @@
+/* Define styles for the main display picture */
+#info img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%;
+    border: 2px solid rgb(30, 207, 172);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to the main display picture */
+#info img:hover {
+    transform: scale(1.1);
+}
+
+/* Define styles for the description section */
+.prose {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    font-family: Arial, sans-serif; /* Use your desired font family */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+}
+
+/* Define styles for the social media links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.social-link {
+    margin: 0 10px; /* Adjust the horizontal margin as needed */
+}
+
+.social-link img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* 

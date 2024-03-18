@@ -1,0 +1,67 @@
+
+main {
+    display: block;
+}
+
+div.bodyy{
+    max-width: 900px;
+    margin: auto;
+    border: transparent;
+    padding: 20px;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+
+}
+
+
+div.homepage #info img{
+    width : 176px;
+    height: 176px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(30, 207, 172);
+    border-width: 16px;
+    transition:  300ms ease-out,border-width 300ms ease-out;
+    margin-left: 500px;
+}
+
+/* Hover effect to glow */
+div.homepage #info img:hover {
+    border-width: 2px;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* Social links container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual social link */
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Social link icon */
+.social-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Hover effect to glow */
+.social-link:hover {
+    transform: scale(1.2);
+}

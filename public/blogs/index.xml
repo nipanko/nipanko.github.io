@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on nipanko</title>
+    <link>https://example.org/blogs/</link>
+    <description>Recent content in Blogs on nipanko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© nipanko</copyright>
+    <lastBuildDate>Sat, 09 Mar 2024 14:42:47 +0530</lastBuildDate>
+    <atom:link href="https://example.org/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lexical</title>
+      <link>https://example.org/blogs/lexical/</link>
+      <pubDate>Sat, 09 Mar 2024 14:42:47 +0530</pubDate>
+      <guid>https://example.org/blogs/lexical/</guid>
+      <description>Rough Idea&#xA;HLL -&amp;gt; Lexical Analysis (stream of tokens) -&amp;gt; Syntax Analysis (parse tree) -&amp;gt; Semantic analysis (Parse tree (semantically verified))-&amp;gt; Intermidiate code generation (Three address code) -&amp;gt; Code optimization -&amp;gt; Target code generation -&amp;gt; Assembler During all this process all the modules will take support form {[SYMBOL TABLE MANAGER]} and talk with the {[ERROR HANDLER]} A lexical(relating to word) analyzer is ==a part of a compiler that breaks input into meaningful units==.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://example.org/blogs/c&#43;&#43;/</link>
+      <pubDate>Sat, 09 Mar 2024 14:41:59 +0530</pubDate>
+      <guid>https://example.org/blogs/c&#43;&#43;/</guid>
+      <description>Linux distribution mainly consists of the following components&#xA;Boot Loader Init System Display Renderer Display Manager Display Environments Package Managers All Linux Distros differ based on these 3 components</description>
+    </item>
+    <item>
+      <title>Symbol Tables</title>
+      <link>https://example.org/blogs/symbol-tables/</link>
+      <pubDate>Sat, 09 Mar 2024 13:55:43 +0530</pubDate>
+      <guid>https://example.org/blogs/symbol-tables/</guid>
+      <description>123456789 from manimlib import *class SquareToCircle(Scene): def construct(self): circle = Circle() circle.set_fill(BLUE, opacity=0.5) circle.set_stroke(BLUE_E, width=4) self.</description>
+    </item>
+  </channel>
+</rss>

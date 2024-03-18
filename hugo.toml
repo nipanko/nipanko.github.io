@@ -1,0 +1,101 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'nipanko'
+
+
+enableRobotsTXT = true
+buildDrafts =  false
+buildFuture =  false
+buildExpired = false
+
+googleAnalytics = 'UA-123-45'
+
+
+
+copyright = "© nipanko"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "nipanko"
+
+paginate=4 # articles per page
+summaryLength = 15
+
+
+[params]
+    env = "production" 
+    description = "Nipanko Nath Mazumder's Personal Website"
+    favicon = "img/nipanko.png" #is site tab pic
+    mainSections = ["tsd"]
+	mode="toggle" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Self taught and persistent"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowWordCount = true
+    ShowRssButtonInSectionTermList = true
+    UseHugoToc = true
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = false
+    hidemeta = false
+    hideSummary = false
+    showtoc = false
+    tocopen = false
+    customcss = ["css/style.css","css/cursor.css","css/404.css"]
+   
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/nipanko"
+
+[[params.social]]
+name = "Instagram"
+icon = "instagram"
+url = "https://www.instagram.com/nipanko/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/nipanko/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Blogs"
+url = "/blogs"
+weight = 2
+
+[[menu.main]]
+name = "Creative"
+url = "/creative"
+weigth = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+
+
+# Enable tags.
+[taxonomies]
+   tag = "tags"

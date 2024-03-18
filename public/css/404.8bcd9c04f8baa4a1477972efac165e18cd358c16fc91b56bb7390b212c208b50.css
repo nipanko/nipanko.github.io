@@ -1,0 +1,6 @@
+.not-found-card {
+    background-color: aqua;
+    box-shadow: );
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
