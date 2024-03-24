@@ -6,7 +6,9 @@
     {{- end -}}
   </div>
   <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} 
+    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ "Made with 💖 " }} | Powered by <a
+      href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/athul/archie/"
+      target="_blank">Archie</a> {{ end }}
   </div>
 </footer>
 {{ if not .Site.IsServer }}

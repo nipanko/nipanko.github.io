@@ -14,7 +14,7 @@
       <link>http://localhost:1313/blogs/lexical/</link>
       <pubDate>Sat, 09 Mar 2024 14:42:47 +0530</pubDate>
       <guid>http://localhost:1313/blogs/lexical/</guid>
-      <description>Rough Idea&#xA;HLL -&amp;gt; Lexical Analysis (stream of tokens) -&amp;gt; Syntax Analysis (parse tree) -&amp;gt; Semantic analysis (Parse tree (semantically verified))-&amp;gt; Intermidiate code generation (Three address code) -&amp;gt; Code optimization -&amp;gt; Target code generation -&amp;gt; Assembler During all this process all the modules will take support form {[SYMBOL TABLE MANAGER]} and talk with the {[ERROR HANDLER]} A lexical(relating to word) analyzer is ==a part of a compiler that breaks input into meaningful units==.</description>
+      <description>Rough Idea&#xA;TILL ICG (Intermediate Code Generator) -&amp;gt; everything is front end and rest is backend</description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
