@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nipanko</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nipanko.github.io/</link>
     <description>Recent content on nipanko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© nipanko</copyright>
     <lastBuildDate>Thu, 21 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nipanko.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Title</title>
-      <link>http://localhost:1313/creative/test/</link>
+      <link>https://nipanko.github.io/creative/test/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/creative/test/</guid>
+      <guid>https://nipanko.github.io/creative/test/</guid>
       <description>Here is the cosdasdasdsfsfntent of your Markdown file.</description>
     </item>
     <item>
       <title>Bash</title>
-      <link>http://localhost:1313/projects/bash/</link>
+      <link>https://nipanko.github.io/projects/bash/</link>
       <pubDate>Sat, 09 Mar 2024 14:43:06 +0530</pubDate>
-      <guid>http://localhost:1313/projects/bash/</guid>
+      <guid>https://nipanko.github.io/projects/bash/</guid>
       <description>pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal.</description>
     </item>
     <item>
       <title>Lexical</title>
-      <link>http://localhost:1313/blogs/lexical/</link>
+      <link>https://nipanko.github.io/blogs/lexical/</link>
       <pubDate>Sat, 09 Mar 2024 14:42:47 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/lexical/</guid>
+      <guid>https://nipanko.github.io/blogs/lexical/</guid>
       <description>Rough Idea&#xA;TILL ICG (Intermediate Code Generator) -&amp;gt; everything is front end and rest is backend</description>
     </item>
     <item>
       <title>Lexical</title>
-      <link>http://localhost:1313/creative/lexical-copy/</link>
+      <link>https://nipanko.github.io/creative/lexical-copy/</link>
       <pubDate>Sat, 09 Mar 2024 14:42:47 +0530</pubDate>
-      <guid>http://localhost:1313/creative/lexical-copy/</guid>
+      <guid>https://nipanko.github.io/creative/lexical-copy/</guid>
       <description>Rough Idea&#xA;TILL ICG (Intermediate Code Generator) -&amp;gt; everything is front end and rest is backend</description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/blogs/c&#43;&#43;/</link>
+      <link>https://nipanko.github.io/blogs/c&#43;&#43;/</link>
       <pubDate>Sat, 09 Mar 2024 14:41:59 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/c&#43;&#43;/</guid>
+      <guid>https://nipanko.github.io/blogs/c&#43;&#43;/</guid>
       <description>Linux distribution mainly consists of the following components&#xA;Boot Loader Init System Display Renderer Display Manager Display Environments Package Managers All Linux Distros differ based on these 3 components</description>
     </item>
     <item>
       <title>Hello</title>
-      <link>http://localhost:1313/creative/hello/</link>
+      <link>https://nipanko.github.io/creative/hello/</link>
       <pubDate>Sat, 09 Mar 2024 14:41:35 +0530</pubDate>
-      <guid>http://localhost:1313/creative/hello/</guid>
+      <guid>https://nipanko.github.io/creative/hello/</guid>
       <description>Rules of Rounding off If the digit to be dropped is smaller than 5, then the preceding digit is left unchanged.</description>
     </item>
     <item>
       <title>Symbol Tables</title>
-      <link>http://localhost:1313/blogs/symbol-tables/</link>
+      <link>https://nipanko.github.io/blogs/symbol-tables/</link>
       <pubDate>Sat, 09 Mar 2024 13:55:43 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/symbol-tables/</guid>
+      <guid>https://nipanko.github.io/blogs/symbol-tables/</guid>
       <description>123456789 from manimlib import *class SquareToCircle(Scene): def construct(self): circle = Circle() circle.set_fill(BLUE, opacity=0.5) circle.set_stroke(BLUE_E, width=4) self.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://nipanko.github.io/about/</link>
       <pubDate>Fri, 19 Apr 2019 21:37:58 +0530</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://nipanko.github.io/about/</guid>
       <description>This is some static page where you can write about yourself.dfdfffffffffffffffffffffffff</description>
     </item>
   </channel>
