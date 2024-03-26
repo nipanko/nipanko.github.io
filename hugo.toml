@@ -13,15 +13,16 @@ googleAnalytics = 'UA-123-45'
 
 
 copyright = "© nipanko"
+
 # Code Highlight
-pygmentsstyle = "monokai"
+pygmentsstyle = "onedark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "nipanko"
+
 
 paginate=4 # articles per page
-summaryLength = 15
+summaryLength = 5
 
 
 [params]
@@ -43,7 +44,7 @@ summaryLength = 15
     ShowRssButtonInSectionTermList = true
     UseHugoToc = true
     disableSpecial1stPost = false
-    disableScrollToTop = false
+    disableScrollToTop = true
     comments = false
     hidemeta = false
     hideSummary = false
@@ -51,6 +52,18 @@ summaryLength = 15
     tocopen = false
     customcss = ["css/style.css","css/cursor.css","css/404.css"]
    
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+        wrapStandAloneImageWithinParagraph = false
+
+
+
 
 # Social Tags
 

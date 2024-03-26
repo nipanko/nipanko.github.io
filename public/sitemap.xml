@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nipanko.github.io/blogs/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nipanko.github.io/tags/cryptography/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nipanko.github.io/blogs/introduction-to-cryptography/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nipanko.github.io/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nipanko.github.io/tags/</loc>
+    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nipanko.github.io/creative/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nipanko.github.io/creative/test/</loc>
-    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nipanko.github.io/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nipanko.github.io/projects/bash/</loc>
@@ -19,12 +31,6 @@
   </url><url>
     <loc>https://nipanko.github.io/projects/</loc>
     <lastmod>2024-03-09T14:43:06+05:30</lastmod>
-  </url><url>
-    <loc>https://nipanko.github.io/tags/</loc>
-    <lastmod>2024-03-09T14:43:06+05:30</lastmod>
-  </url><url>
-    <loc>https://nipanko.github.io/blogs/</loc>
-    <lastmod>2024-03-09T14:42:47+05:30</lastmod>
   </url><url>
     <loc>https://nipanko.github.io/blogs/lexical/</loc>
     <lastmod>2024-03-09T14:42:47+05:30</lastmod>

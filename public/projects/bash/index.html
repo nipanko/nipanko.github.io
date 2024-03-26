@@ -2,17 +2,17 @@
 <html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Bash - nipanko</title><link rel="icon" type="image/png" href=img/nipanko.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal." />
+	<meta name="description" content="pwd: Displays the present working directory." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="Bash" />
-<meta property="og:description" content="pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal." />
+<meta property="og:description" content="pwd: Displays the present working directory." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nipanko.github.io/projects/bash/" /><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2024-03-09T14:43:06+05:30" />
 <meta property="article:modified_time" content="2024-03-09T14:43:06+05:30" />
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Bash"/>
-<meta name="twitter:description" content="pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal."/>
+<meta name="twitter:description" content="pwd: Displays the present working directory."/>
 <script src="https://nipanko.github.io/js/feather.min.js"></script>
 	
 	
@@ -20,7 +20,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://nipanko.github.io/css/main.101f49deeb42a9b81c0594f6968513934eab08d7c3d1b7ba4561fd9af6aaf3b3.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://nipanko.github.io/css/main.06334b0e29db470c503c7b496ace3134ea69ac5a8210236471a5dfa058c88883.css" />
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nipanko.github.io/css/dark.3aa2fea1090221061e9a96dc93aea5a3127ef80ec53d47b21cdfd53ca72f7ed0.css"   />
 	
 
@@ -117,6 +117,7 @@
 		
 
 		<section class="body">
+			     
 			<ul>
 <li><code>pwd</code>: Displays the present working directory.</li>
 <li><code>ls</code>: Lists the contents of the current directory.</li>
@@ -128,33 +129,33 @@
 <li>Reading from a file</li>
 </ul>
 <p>This code reads each line from a file named <code>input.txt</code> and prints it to the terminal. We&rsquo;ll study while loops later in this article.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> read line
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>  echo $line
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span> &lt; input.txt
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#c678dd">while</span> <span style="color:#e5c07b">read</span> line
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e5c07b">echo</span> <span style="color:#e06c75">$line</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">done</span> &lt; input.txt
 </span></span></code></pre></div><ul>
 <li>Command line arguments</li>
 </ul>
 <p>In a bash script or function, <code>$1</code> denotes the initial argument passed, <code>$2</code> denotes the second argument passed, and so forth.</p>
 <p>This script takes a name as a command-line argument and prints a personalized greeting.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello, </span>$1<span style="color:#e6db74">!&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;Hello, </span><span style="color:#e06c75">$1</span><span style="color:#98c379">!&#34;</span>
 </span></span></code></pre></div><p>We have supplied <code>Zaira</code> as our argument to the script.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;Hello, </span>$1<span style="color:#e6db74">!&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;Hello, </span><span style="color:#e06c75">$1</span><span style="color:#98c379">!&#34;</span>
 </span></span></code></pre></div><ul>
 <li> Writing to a file:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;This is some text.&#34;</span> &gt; output.txt
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;This is some text.&#34;</span> &gt; output.txt
 </span></span></code></pre></div><p>This writes the text &ldquo;This is some text.&rdquo; to a file named <code>output.txt</code>. Note that the <code>&gt;</code>operator overwrites a file if it already has some content.</p>
 <ul>
 <li>Appending to a file:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;More text.&#34;</span> &gt;&gt; output.txt
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;More text.&#34;</span> &gt;&gt; output.txt
 </span></span></code></pre></div><p>This appends the text &ldquo;More text.&rdquo; to the end of the file <code>output.txt</code>.</p>
 <ul>
 <li>Redirecting output:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls &gt; files.txt
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls &gt; files.txt
 </span></span></code></pre></div><p>This lists the files in the current directory and writes the output to a file named <code>files.txt</code>. You can redirect output of any command to a file this way.</p>
 <ol>
 <li><code>cd</code>: Change the directory to a different location.</li>
@@ -180,31 +181,31 @@
 </ul>
 <p>Expressions that produce a boolean result, either true or false, are called conditions. There are several ways to evaluate conditions, including <code>if</code>, <code>if-else</code>, <code>if-elif-else</code>, and nested conditionals.</p>
 <p><strong><strong>Syntax</strong></strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> condition <span style="color:#f92672">]]</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#c678dd">if</span> <span style="color:#56b6c2">[[</span> condition <span style="color:#56b6c2">]]</span>;
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">then</span>
 </span></span><span style="display:flex;"><span>	statement
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> condition <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">elif</span> <span style="color:#56b6c2">[[</span> condition <span style="color:#56b6c2">]]</span>; <span style="color:#c678dd">then</span>
 </span></span><span style="display:flex;"><span>	statement 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">do</span> this by default
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">else</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#c678dd">do</span> this by default
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">fi</span>
 </span></span></code></pre></div><p>Syntax of bash conditional statements</p>
 <p>We can use logical operators such as AND <code>-a</code> and OR <code>-o</code> to make comparisons that have more significance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $a -gt <span style="color:#ae81ff">60</span> -a $b -lt <span style="color:#ae81ff">100</span> <span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#c678dd">if</span> <span style="color:#56b6c2">[</span> <span style="color:#e06c75">$a</span> -gt <span style="color:#d19a66">60</span> -a <span style="color:#e06c75">$b</span> -lt <span style="color:#d19a66">100</span> <span style="color:#56b6c2">]</span>
 </span></span></code></pre></div><p>This statement checks if both conditions are <code>true</code>: a is greater than 60 AND b is less than 100.</p>
 <p>Let&rsquo;s see an example of a Bash script that uses <code>if</code>, <code>if-else</code>, and <code>if-elif-else</code> statements to determine if a user-inputted number is positive, negative, or zero:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Please enter a number: &#34;</span>
-</span></span><span style="display:flex;"><span>read num
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;Please enter a number: &#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e5c07b">read</span> num
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $num -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span>$num<span style="color:#e6db74"> is positive&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> $num -lt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span>$num<span style="color:#e6db74"> is negative&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span>$num<span style="color:#e6db74"> is zero&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">if</span> <span style="color:#56b6c2">[</span> <span style="color:#e06c75">$num</span> -gt <span style="color:#d19a66">0</span> <span style="color:#56b6c2">]</span>; <span style="color:#c678dd">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;</span><span style="color:#e06c75">$num</span><span style="color:#98c379"> is positive&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">elif</span> <span style="color:#56b6c2">[</span> <span style="color:#e06c75">$num</span> -lt <span style="color:#d19a66">0</span> <span style="color:#56b6c2">]</span>; <span style="color:#c678dd">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;</span><span style="color:#e06c75">$num</span><span style="color:#98c379"> is negative&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">else</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;</span><span style="color:#e06c75">$num</span><span style="color:#98c379"> is zero&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">fi</span>
 </span></span></code></pre></div><ul>
 <li>
 <h3 id="while-loop">While loop</h3>
@@ -212,12 +213,12 @@
 </ul>
 <p>While loops check for a condition and loop until the condition remains <code>true</code>. We need to provide a counter statement that increments the counter to control loop execution.</p>
 <p>In the example below, <code>(( i += 1 ))</code> is the counter statement that increments the value of <code>i</code>. The loop will run exactly 10 times.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> $i -le <span style="color:#ae81ff">10</span> <span style="color:#f92672">]]</span> ; <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">((</span> i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">))</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span><span style="color:#e06c75">i</span><span style="color:#56b6c2">=</span><span style="color:#d19a66">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">while</span> <span style="color:#56b6c2">[[</span> <span style="color:#e06c75">$i</span> -le <span style="color:#d19a66">10</span> <span style="color:#56b6c2">]]</span> ; <span style="color:#c678dd">do</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#e5c07b">echo</span> <span style="color:#98c379">&#34;</span><span style="color:#e06c75">$i</span><span style="color:#98c379">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#56b6c2">((</span> <span style="color:#e06c75">i</span> <span style="color:#56b6c2">+=</span> <span style="color:#d19a66">1</span> <span style="color:#56b6c2">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">done</span>
 </span></span></code></pre></div><p>While loop that iterates 10 times.</p>
 <ul>
 <li>
@@ -226,12 +227,12 @@
 </ul>
 <p>The <code>for</code> loop, just like the <code>while</code> loop, allows you to execute statements a specific number of times. Each loop differs in its syntax and usage.</p>
 <p>In the example below, the loop will iterate 5 times.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..5<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>    echo $i
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#7f848e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">for</span> i in <span style="color:#56b6c2">{</span>1..5<span style="color:#56b6c2">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e5c07b">echo</span> <span style="color:#e06c75">$i</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">done</span>
 </span></span></code></pre></div><p>For loop that iterates 5 times.</p>
 <ul>
 <li>
@@ -239,23 +240,24 @@
 </li>
 </ul>
 <p>In Bash, case statements are used to compare a given value against a list of patterns and execute a block of code based on the first pattern that matches. The syntax for a case statement in Bash is as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">case</span> expression in
-</span></span><span style="display:flex;"><span>    pattern1<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># code to execute if expression matches pattern1</span>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#c678dd">case</span> expression in
+</span></span><span style="display:flex;"><span>    pattern1<span style="color:#56b6c2">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7f848e"># code to execute if expression matches pattern1</span>
 </span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    pattern2<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># code to execute if expression matches pattern2</span>
+</span></span><span style="display:flex;"><span>    pattern2<span style="color:#56b6c2">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7f848e"># code to execute if expression matches pattern2</span>
 </span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    pattern3<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># code to execute if expression matches pattern3</span>
+</span></span><span style="display:flex;"><span>    pattern3<span style="color:#56b6c2">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7f848e"># code to execute if expression matches pattern3</span>
 </span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    *<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># code to execute if none of the above patterns match expression</span>
+</span></span><span style="display:flex;"><span>    *<span style="color:#56b6c2">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7f848e"># code to execute if none of the above patterns match expression</span>
 </span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">esac</span>
 </span></span></code></pre></div><p>Here, &ldquo;expression&rdquo; is the value that we want to compare, and &ldquo;pattern1&rdquo;, &ldquo;pattern2&rdquo;, &ldquo;pattern3&rdquo;, and so on are the patterns that we want to compare it against.</p>
 <p>The double semicolon &ldquo;;;&rdquo; separates each block of code to execute for each pattern. The asterisk &ldquo;*&rdquo; represents the default case, which executes if none of the specified patterns match the expression.</p>
 
+			
 		</section>
 
 		<div class="post-tags">
@@ -263,23 +265,8 @@
 			
 			
 		</div>
-		<div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function () {
-        
-        
-        if (window.location.hostname == "localhost")
-            return;
-
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        var disqus_shortname = 'nipanko';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-</article>
+		
+	</article>
 </main>
 <footer>
   <div style="display:flex"><a class="soc" href="https://github.com/nipanko" rel="me" title="GitHub"><i data-feather="github"></i></a>
@@ -308,6 +295,7 @@ if (!doNotTrack) {
 <script>
   feather.replace()
 </script></div>
+        
        
         <script src="../../static/js/main.js"></script>
     </body>

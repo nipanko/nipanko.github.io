@@ -20,7 +20,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://nipanko.github.io/css/main.101f49deeb42a9b81c0594f6968513934eab08d7c3d1b7ba4561fd9af6aaf3b3.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://nipanko.github.io/css/main.06334b0e29db470c503c7b496ace3134ea69ac5a8210236471a5dfa058c88883.css" />
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nipanko.github.io/css/dark.3aa2fea1090221061e9a96dc93aea5a3127ef80ec53d47b21cdfd53ca72f7ed0.css"   />
 	
 
@@ -117,8 +117,24 @@
 		
 
 		<section class="body">
+			     
 			<p>Here is the cosdasdasdsfsfntent of your Markdown file.</p>
 
+<pre class="mermaid" style="font-size: larger;">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop HealthCheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</pre>
+
+
+			
 		</section>
 
 		<div class="post-tags">
@@ -126,23 +142,8 @@
 			
 			
 		</div>
-		<div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function () {
-        
-        
-        if (window.location.hostname == "localhost")
-            return;
-
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        var disqus_shortname = 'nipanko';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-</article>
+		
+	</article>
 </main>
 <footer>
   <div style="display:flex"><a class="soc" href="https://github.com/nipanko" rel="me" title="GitHub"><i data-feather="github"></i></a>
@@ -171,6 +172,12 @@ if (!doNotTrack) {
 <script>
   feather.replace()
 </script></div>
+        
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
        
         <script src="../../static/js/main.js"></script>
     </body>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Introduction to Cryptography🔑 - nipanko</title><link rel="icon" type="image/png" href=img/nipanko.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="&ldquo;Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Introduction to Cryptography🔑" />
+<meta property="og:description" content="&ldquo;Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blogs/my-first-article/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2024-03-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-24T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Introduction to Cryptography🔑"/>
+<meta name="twitter:description" content="&ldquo;Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries."/>
+<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+	
+        <link href="http://localhost:1313/css/fonts.11a1877508139eac0b5b4852ceb110c35641b3533321e66e39149e901ed5756b.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.101f49deeb42a9b81c0594f6968513934eab08d7c3d1b7ba4561fd9af6aaf3b3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.3aa2fea1090221061e9a96dc93aea5a3127ef80ec53d47b21cdfd53ca72f7ed0.css"   />
+	
+
+	
+	
+		<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/style.eef9e95fa5f61b9bb958458b3a9a88a2a2a7c88a08b3797e2b2842b38630b44b.css">
+	<link rel="stylesheet" href="../../assets/css/main.css">
+
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/cursor.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+	<link rel="stylesheet" href="../../assets/css/main.css">
+
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/404.ac21eb2d36bd913dbe15fe06a8ef0abaacdbd9e2fd37124ddd1733860c88e694.css">
+	<link rel="stylesheet" href="../../assets/css/main.css">
+
+		
+
+</head>
+<body>
+       
+        
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">nipanko</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/blogs">Blogs</a>
+		
+		<a href="/projects">Projects</a>
+		
+		<a href="/creative">Creative</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Introduction to Cryptography🔑</h1>
+			<div class="meta">Posted on Mar 24, 2024</div>
+		</div>
+		
+
+		<section class="body">
+			<blockquote>
+<p>&ldquo;Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries.&rdquo;</p>
+</blockquote>
+<p>OR</p>
+<blockquote>
+<p>&ldquo;Cryptography is the practice of developing and using coded algorithms to protect and obscure transmitted information so that it may only be read by those with the permission and ability to decrypt it. Put differently, cryptography obscures communications so that unauthorized parties are unable to access them.&rdquo; -IBM</p>
+</blockquote>
+<p>Cryptography, originating from the Greek word &ldquo;<!-- raw HTML omitted -->kryptos<!-- raw HTML omitted -->&rdquo; meaning hidden, embodies the art of concealing digital communications. It encompasses various mediums such as text, images, video, or audio. Primarily, cryptography serves to convert messages into an unintelligible format known as ciphertext. This ciphertext can only be deciphered back into its original readable form, known as plaintext, by authorized recipients possessing a specific secret key.</p>
+<h4 id="study-of-cryptology">Study of Cryptology</h4>
+<p>Cryptology, which encompasses both cryptography and cryptanalysis, is deeply rooted in computer science and advanced mathematics.</p>
+<p><img src="/images/cryptography.svg" alt="cryptography"></p>
+<h3 id="what-is-the-relationship-between-cryptography-and-security">What is the relationship between Cryptography and Security</h3>
+<p>Relationship between cryptography and security is that cryptography is a subfield or part of Security. Security is a vast field and there are many aspects of security we need to take care of cryptography is just one of them which deals with encryption and decryption of data, making it an important part of security.</p>
+<h2 id="core-principles-of-cryptography">Core Principles of Cryptography</h2>
+<p>Cryptography at its core is</p>
+<ul>
+<li>Secure key establishment</li>
+<li>Secure communication</li>
+</ul>
+<p>The core principles of modern cryptography have evolved over time, yet they remain grounded in four fundamental concepts.</p>
+<ol>
+<li>
+<p><strong>Confidentiality:</strong> Encrypted data is accessible exclusively to its intended recipient, ensuring that unauthorized parties cannot decipher its contents.</p>
+</li>
+<li>
+<p><strong>Integrity:</strong> Encrypted data remains unaltered during storage or transmission, as any unauthorized modifications are readily detectable by the recipient.</p>
+</li>
+<li>
+<p><strong>Non-repudiation:</strong> The sender of encrypted information cannot deny their involvement or intention to transmit the data, providing assurance of accountability.</p>
+</li>
+<li>
+<p><strong>Authentication:</strong> The identities of both the sender and receiver are verified, along with the origin and destination of the encrypted information, ensuring the integrity of the communication process.</p>
+</li>
+</ol>
+<h2 id="common-uses-for-cryptography">Common uses for cryptography</h2>
+<ol>
+<li>
+<p><strong>Passwords:</strong> Cryptography plays a pivotal role in safeguarding user passwords across various digital platforms. Passwords are often hashed using cryptographic algorithms before storage, ensuring that even if the stored data is compromised, the original passwords remain protected. Additionally, cryptographic techniques such as salting are employed to enhance the security of password storage, mitigating the risk of common attacks such as rainbow table attacks.</p>
+</li>
+<li>
+<p><strong>Cryptocurrency:</strong> Cryptocurrencies like Bitcoin and Ethereum rely heavily on cryptographic principles to ensure the security and integrity of transactions. Blockchain technology, the underlying foundation of cryptocurrencies, employs cryptographic techniques such as hash functions and digital signatures to secure transaction data, validate the authenticity of transactions, and prevent double-spending.</p>
+</li>
+<li>
+<p><strong>Electronic Signatures:</strong> In the digital realm, electronic signatures are used to authenticate the identity of signers and validate the integrity of electronic documents or messages. Cryptographic digital signatures utilize asymmetric encryption algorithms to sign documents, ensuring that the signer cannot repudiate their actions and providing assurance of the document&rsquo;s authenticity and integrity.</p>
+</li>
+<li>
+<p><strong>Authentication:</strong> Cryptography is extensively used in authentication mechanisms to verify the identity of users and entities. Techniques such as digital certificates, challenge-response protocols, and biometric authentication rely on cryptographic algorithms to securely authenticate users and authorize access to sensitive resources. By leveraging cryptographic techniques, authentication systems can thwart unauthorized access attempts and uphold the confidentiality and integrity of data.</p>
+</li>
+<li>
+<p><strong>Secure Communications:</strong> Cryptography forms the backbone of secure communication protocols such as SSL/TLS (Secure Socket Layer/Transport Layer Security), which are used to establish encrypted connections between parties over insecure networks such as the internet. These protocols employ cryptographic algorithms to encrypt data in transit, protecting it from interception and unauthorized access by adversaries. Secure communication protocols ensure the confidentiality, integrity, and authenticity of data exchanged between communicating parties, fostering trust in digital interactions.</p>
+</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/nipanko" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://www.instagram.com/nipanko/" rel="me" title="Instagram"><i data-feather="instagram"></i></a>
+    <a class="border"></a><a class="soc" href="https://www.linkedin.com/in/nipanko/" rel="me" title="LinkedIn"><i data-feather="linkedin"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2024  © nipanko | Made with 💖  | Powered by <a
+      href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/athul/archie/"
+      target="_blank">Archie</a> 
+  </div>
+</footer>
+<script>
+  feather.replace()
+</script></div>
+       
+        <script src="../../static/js/main.js"></script>
+    </body>
+</html>

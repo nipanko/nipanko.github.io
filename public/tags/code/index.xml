@@ -14,7 +14,7 @@
       <link>https://nipanko.github.io/projects/bash/</link>
       <pubDate>Sat, 09 Mar 2024 14:43:06 +0530</pubDate>
       <guid>https://nipanko.github.io/projects/bash/</guid>
-      <description>pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal.</description>
+      <description>pwd: Displays the present working directory.</description>
     </item>
   </channel>
 </rss>

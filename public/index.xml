@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© nipanko</copyright>
-    <lastBuildDate>Thu, 21 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nipanko.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Cryptography🔑</title>
+      <link>https://nipanko.github.io/blogs/introduction-to-cryptography/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://nipanko.github.io/blogs/introduction-to-cryptography/</guid>
+      <description>&amp;ldquo;Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries.</description>
+    </item>
     <item>
       <title>Example Title</title>
       <link>https://nipanko.github.io/creative/test/</link>
@@ -21,7 +28,7 @@
       <link>https://nipanko.github.io/projects/bash/</link>
       <pubDate>Sat, 09 Mar 2024 14:43:06 +0530</pubDate>
       <guid>https://nipanko.github.io/projects/bash/</guid>
-      <description>pwd: Displays the present working directory. ls: Lists the contents of the current directory. echo: Prints a string of text, or value of a variable to the terminal.</description>
+      <description>pwd: Displays the present working directory.</description>
     </item>
     <item>
       <title>Lexical</title>
@@ -42,7 +49,7 @@
       <link>https://nipanko.github.io/blogs/c&#43;&#43;/</link>
       <pubDate>Sat, 09 Mar 2024 14:41:59 +0530</pubDate>
       <guid>https://nipanko.github.io/blogs/c&#43;&#43;/</guid>
-      <description>Linux distribution mainly consists of the following components&#xA;Boot Loader Init System Display Renderer Display Manager Display Environments Package Managers All Linux Distros differ based on these 3 components</description>
+      <description>Linux distribution mainly consists of the following components</description>
     </item>
     <item>
       <title>Hello</title>
@@ -56,14 +63,14 @@
       <link>https://nipanko.github.io/blogs/symbol-tables/</link>
       <pubDate>Sat, 09 Mar 2024 13:55:43 +0530</pubDate>
       <guid>https://nipanko.github.io/blogs/symbol-tables/</guid>
-      <description>123456789 from manimlib import *class SquareToCircle(Scene): def construct(self): circle = Circle() circle.set_fill(BLUE, opacity=0.5) circle.set_stroke(BLUE_E, width=4) self.</description>
+      <description>123456789 from manimlib import *class SquareToCircle(Scene): def construct(self): circle = Circle() circle.</description>
     </item>
     <item>
       <title>About</title>
       <link>https://nipanko.github.io/about/</link>
       <pubDate>Fri, 19 Apr 2019 21:37:58 +0530</pubDate>
       <guid>https://nipanko.github.io/about/</guid>
-      <description>This is some static page where you can write about yourself.dfdfffffffffffffffffffffffff</description>
+      <description>This is some static page where you can write about yourself.</description>
     </item>
   </channel>
 </rss>

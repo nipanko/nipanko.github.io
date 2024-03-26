@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 {{ if isset .Data "Term" }}
 <h1>Entries tagged - "{{ .Data.Term }}"</h1>
@@ -5,9 +6,12 @@
 <h1 class="page-title">Creative Works 🎨</h1>
 {{ end }}
 
+
+
 <ul class="custom-posts">
     {{- range .Data.Pages -}}
       {{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+      
         <li class="custom-post">
           <a href="{{ .RelPermalink }}" class="card-link">
             <div class="card-container"> <!-- Wrapper div for the card -->
@@ -26,7 +30,12 @@
     {{- end -}}
   </ul>
   
-  
+  {{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+{{ end }}
   
   
   
