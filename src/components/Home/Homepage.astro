@@ -1,0 +1,159 @@
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import "./Homepage.scss";
+  gsap.registerPlugin(ScrollTrigger);
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".logo", {
+      y: "40vh",
+      scale: 8.5,
+      yPercent: -50,
+      scrollTrigger: {
+        trigger: ".content",
+        start: "top bottom",
+        end: "top center",
+        scrub: true,
+      }
+    });
+  });
+  </script>
+  
+  <div class="home-body">
+    <!-- <video playsinline autoplay muted loop id="bgvid">
+      <source src="video.mp4" type="video/mp4">
+    </video> -->
+    <div class="logo-container">
+      <h1 class="logo">nipanko</h1>
+    </div>
+    <div class="container"></div>
+    <div class="content"></div>
+  </div>
+  
+  <style style="scss">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  
+    body {
+      font-family: sans-serif;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 200vh;
+      background: #000;
+      position: relative;
+    }
+  
+    .home-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #fff;
+      text-align: center;
+      padding: 0 1em;
+    }
+  
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      padding: 0 1em;
+      font-family: "HK Guise";
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  
+    .logo-container {
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      padding: 1em;
+    }
+  
+    /* video {
+      object-fit: cover;
+      transform: scale(1.5);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    } */
+  
+    .logo {
+      background: url(/pixel.jpg)  rgba( 255, 255, 255, 0.05 );;
+      font-family: "Cosi Times";
+      display: inline-flex;
+      padding: 1em;
+
+
+      background-position: 0 0;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: #00000000;
+      animation: animatedOne 30s linear infinite;
+    }
+  
+    h1:hover {
+      -webkit-text-fill-color: #ff2400;
+    }
+  
+    @keyframes animatedOne {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+  
+    .container, .content {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2em;
+    }
+  
+    @media (max-width: 768px) {
+      .logo-container {
+        padding: 0.5em;
+      }
+  
+      .logo {
+        font-size: 2rem;
+      }
+  
+      .container, .content {
+        padding: 0 1em;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .logo-container {
+        padding: 0.25em;
+      }
+  
+      .logo {
+        font-size: 1.5rem;
+      }
+  
+      .container, .content {
+        padding: 0.5em;
+      }
+    }
+  </style>
+  

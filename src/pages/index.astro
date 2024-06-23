@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import ArrowCard from "@components/ArrowCard";
+import StackCard from "@components/StackCard.astro";
+import { SITE, SOCIALS } from "@consts";
+import TwinklingStars from "@components/TwinklingStars.astro";
+import MeteorShower from "@components/MeteorShower.astro";
+import Homepage from "@components/Home/Homepage.astro";
+import Loader from "@components/Home/Loader.astro";
+import NavBar from "@components/NavBar.astro";
+const posts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+
+const projects = (await getCollection("projects"))
+  .filter((project) => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+
+const stack = [
+  {
+    text: "Astro",
+    icon: "astro",
+    href: "https://astro.build",
+  },
+  {
+    text: "Javascript",
+    icon: "javascript",
+    href: "https://www.javascript.com",
+  },
+  {
+    text: "Typescript",
+    icon: "typescript",
+    href: "https://www.typescriptlang.org",
+  },
+  {
+    text: "Tailwind",
+    icon: "tailwind",
+    href: "https://tailwindcss.com",
+  },
+];
+---
+
+<div >
+  <NavBar/>
+  <Homepage/>
+</div>
+
+

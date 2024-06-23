@@ -1,0 +1,32 @@
+:root {
+    --primary: #000000;
+    --secondary: rgba(96, 95, 93, 0.4);
+    --tertiary: rgba(251, 75, 0, 0.6);
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+  }
+  
+  
+  
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tertiary);
+  }
+  

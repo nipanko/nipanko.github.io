@@ -1,0 +1,83 @@
+---
+import { SITE, LINKS } from "@consts"
+import { cn } from "@lib/utils"
+const { pathname } = Astro.url
+const subpath = pathname.match(/[^/]+/g)
+---
+<div class="home-body">
+
+    <div class="navbar">
+        <a href="/" class="active">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/projects">Projects</a>
+        <a href="/work">Creative</a>
+        
+        <a href="/search" aria-label={`Search blog posts and projects on ${SITE.TITLE}`} class="text-cyan-100">
+            <div>
+                Search
+            </div>
+        </a>
+        
+    
+</div>
+
+
+
+<style>
+    .home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    /* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: transparent;
+  opacity:1;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: fit-content;
+  margin-bottom: 4rem;
+  z-index: 10000;
+  transition: transform 0.4s; 
+}
+
+.navbar:hover {
+  opacity:1.5;
+  transform: translateY(-8px);
+}
+
+.navbar a {
+  background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 transparent;
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+border-radius: 10px;
+  float: left;
+  display: block;
+  color: wheat;
+  text-align: center;
+  padding: 6px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px solid red;
+  margin: 0 4px; /* Add some spacing between buttons */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for background-color, color, and border-color */
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000; /* Change border color on hover */
+}
+
+.navbar a.active {
+  background-color: tan;
+  color: black;
+}
+
+</style> 
+
+
+
