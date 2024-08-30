@@ -21,7 +21,7 @@ Cryptography, originating from the Greek word "<span style="color:#ffc000">krypt
 
 Cryptology, which encompasses both cryptography and cryptanalysis, is deeply rooted in computer science and advanced mathematics.
 
-[cryptography.svg](cryptography.svg)
+![cryptography.svg](cryptography.svg)
 
 ### What is the relationship between Cryptography and Security
 
