@@ -1,72 +1,31 @@
+
+<canvas id="canvas3d"></canvas>
 <script>
-  import "./Homepage.scss";
+
+import { Application } from '@splinetool/runtime';
+
+const canvas = document.getElementById('canvas3d');
+const app = new Application(canvas);
+app.load('https://prod.spline.design/zyIuH48pz7WzPuvd/scene.splinecode');
+
 </script>
 
-<h1 class="logo neonText">nipanko</h1>
 
-<style style="scss">
+<!-- 
+<style lang="css">
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
 
-  body {
-    font-family: "Cosi Times", serif; /* A futuristic font suitable for cyberpunk style */
-    overflow: hidden; /* Hides any overflow from scrolling */
-    background: #000000;
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height : 80vh;
+  canvas {
+    width: 100vw;
+    height: 100vh;
   }
-
-  .logo {
-    font-family: "Cosi Times", serif; /* Applying the futuristic font */
-    padding: 0; /* Removed padding to ensure it's centered */
-    animation: flicker 3s infinite alternate; /* Longer animation duration for smooth effect */
-    color: #ff0000; /* Red neon color for a cyberpunk feel */
-    font-size: 10rem; /* Adjusted font size for better visibility */
-    text-align: center; /* Centers text within its container */
-  }
-
-  /* Flickering animation to mimic neon signs in a cyberpunk theme */
-  @keyframes flicker {
-    0%, 19%, 21%, 23%, 25%, 27%, 50%, 52%, 54%, 56%, 100% {
-      opacity: 1;
-      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000,
-                   0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000,
-                   0 0 60px #ff0000, 0 0 70px #ff0000;
-    }
-    20%, 24%, 26%, 28%, 51%, 53%, 55% {
-      opacity: 0.8;
-      text-shadow: none;
-    }
-    70%, 72%, 93% {
-      opacity: 0.6;
-      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
-    }
-    75%, 76%, 77% {
-      opacity: 0.9;
-      text-shadow: 0 0 3px #ff0000, 0 0 8px #ff0000, 0 0 14px #ff0000,
-                   0 0 20px #ff0000;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .logo {
-      font-size: 5rem; /* Adjusted for better responsiveness on smaller screens */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .logo {
-      font-size: 3rem; /* Further adjusted for smaller screens */
-    }
-  }
-</style>
+</style> -->
