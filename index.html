@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>WeisDevice Portfolio</title>
+    <title>Nipanko's Portfolio</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <!-- Boot Screen -->
     <div id="boot-screen">
       <div class="boot-text" id="boot-text">
         <p>> C:\WINNT\SYSTEM32\boot.exe</p>
@@ -13,22 +14,57 @@
       </div>
     </div>
 
-    <div id="main-content" style="display:none;">
-      <!-- main portfolio windows go here -->
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
       <h1 class="title">Welcome to My Portfolio</h1>
-      <div class="window" id="dialog-box">
-  <div class="window-header">
-    <span class="window-title">🗨️ Dialog Box</span>
-    <div class="window-controls">
-      <button class="btn-close">✖</button>
-    </div>
-  </div>
-  <div class="window-body">
-    <p>This is a custom dialog with scroll-trigger animation and stylized UI. You can build a resume viewer or blog reader just like this.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.</p>
-  </div>
-</div>
 
+      <!-- Window Launch Buttons -->
+      <button id="open-resume">Open Resume</button>
+      <button id="open-blog">Read Blog</button>
+
+      <!-- Dialog Box -->
+      <div class="window" id="dialog-box" style="top: 100px; left: 100px;">
+        <div class="window-header">
+          <span class="window-title">🗨️ Dialog Box</span>
+          <div class="window-controls">
+            <button class="btn-close">✖</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>This is a custom dialog with scroll-trigger animation and stylized UI.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.</p>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Resume Window -->
+      <div class="window" id="resume-window" style="display: none; top: 150px; left: 150px;">
+        <div class="window-header">
+          <span class="window-title">📄 Resume</span>
+          <div class="window-controls">
+            <button class="btn-close">✖</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <iframe src="resumenew.pdf" width="100%" height="100%" style="border: none;"></iframe>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Blog Reader -->
+      <div class="window" id="blog-window" style="display: none; top: 200px; left: 200px;">
+        <div class="window-header">
+          <span class="window-title">📰 Blog Reader</span>
+          <div class="window-controls">
+            <button class="btn-close">✖</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h3>Latest Blog Post</h3>
+          <p>Scroll-trigger animation with GSAP will go here...</p>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
     </div>
 
     <script type="module" src="/src/main.js"></script>

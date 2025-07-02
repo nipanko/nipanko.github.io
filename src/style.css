@@ -85,3 +85,18 @@ body {
   background: #ff0066;
   color: white;
 }
+
+.window-header {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.resize-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+  background: #00ffcc;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
