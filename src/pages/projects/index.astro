@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Projects | Portfolio & Blog">
+    <h1 class="text-2xl mb-8 text-center">PROJECTS</h1>
+    <div class="grid grid-cols-1 gap-8">
+        <div>
+            <img src="https://placehold.co/600x400/2a2a2a/00ff00?text=PBR+Renderer" alt="Project 1" class="w-full mb-4 border-4" style="border-color: var(--border-color);">
+            <h3 class="text-lg mb-2">PBR Renderer</h3>
+            <p class="text-xs" style="color: var(--text-secondary);">A real-time physically based renderer built with C++ and Vulkan.</p>
+        </div>
+        <div>
+            <img src="https://placehold.co/600x400/2a2a2a/00ff00?text=Fluid+Sim" alt="Project 2" class="w-full mb-4 border-4" style="border-color: var(--border-color);">
+            <h3 class="text-lg mb-2">Compute Shader Fluid Sim</h3>
+            <p class="text-xs" style="color: var(--text-secondary);">A 2D fluid simulation running entirely on the GPU using compute shaders.</p>
+        </div>
+    </div>
+</Layout>
