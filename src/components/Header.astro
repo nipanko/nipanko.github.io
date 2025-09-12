@@ -1,18 +1,26 @@
-<header>
-    <div class="flex justify-between items-center mb-6">
-        <a href="/" class="text-xl md:text-2xl" style="text-shadow: 3px 3px 0px var(--shadow-color);">MySite.io</a>
-        <div class="flex items-center space-x-2">
-             <button id="theme-dark" class="pixel-button text-xs" title="Dark Mode">DRK</button>
-             <button id="theme-light" class="pixel-button text-xs" title="Light Mode">LIT</button>
-             <button id="theme-matrix" class="pixel-button text-xs" title="Matrix Mode">MTRX</button>
-        </div>
+---
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) =>
+  currentPath === href || (href !== '/' && currentPath.startsWith(href + '/'));
+---
+<header class="header-bar">
+  <div class="header-inner">
+    <div class="header-row">
+      <a href="/" class="text-xl md:text-2xl" style="text-shadow: 3px 3px 0px var(--shadow-color);">nipanko</a>
+      <div class="flex items-center gap-2">
+        <button id="theme-dark" class="pixel-button text-xs" title="Dark Mode">DRK</button>
+        <button id="theme-light" class="pixel-button text-xs" title="Light Mode">LIT</button>
+        <button id="theme-matrix" class="pixel-button text-xs" title="Matrix Mode">MTRX</button>
+      </div>
     </div>
-    <nav>
-        <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 border-y-4 py-2" style="border-color: var(--border-color);">
-            <li><a href="/" class="link-style text-sm">HOME</a></li>
-            <li><a href="/blog" class="link-style text-sm">BLOG</a></li>
-            <li><a href="/projects" class="link-style text-sm">PROJECTS</a></li>
-            <li><a href="/creative" class="link-style text-sm">CREATIVE</a></li>
-        </ul>
+
+    <nav class="nav-row">
+      <ul class="nav-list">
+        <li><a href="/" class="link-style text-sm" aria-current={isActive('/') ? 'page' : undefined}>HOME</a></li>
+        <li><a href="/blog" class="link-style text-sm" aria-current={isActive('/blog') ? 'page' : undefined}>BLOG</a></li>
+        <li><a href="/projects" class="link-style text-sm" aria-current={isActive('/projects') ? 'page' : undefined}>PROJECTS</a></li>
+        <li><a href="/creative" class="link-style text-sm" aria-current={isActive('/creative') ? 'page' : undefined}>CREATIVE</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
